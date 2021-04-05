@@ -1,15 +1,15 @@
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <script defer src="script.js"></script>
+    <script defer src="script.js"></script>
 
-  <title>HAMONDAS mb</title>
+    <title>HAMONDAS mb</title>
 </head>
 
 <body>
@@ -18,16 +18,16 @@
     <!-- HEADERIS -->
 
     <!-- <header class="header_container" role="banner"> -->
-      <header class="header_container" >
-      <nav class="nav_bar sticky" >
-        <button class="btn-logo"></button>
-        <div class="header-right">
-          <!-- <a class="active" href="#home">Home</a> -->
-          <a class="nav_link " href="#section_abbout-us">APIE MUS</a>
-          <a class="nav_link " href="#section_cards">AUTOMOBILIAI</a>
-          <a class="nav_link " href="#section_contacts"> SUSISIEKIME</a>
-        </div>
-      </nav> 
+    <header class="header_container">
+        <nav class="nav_bar sticky">
+            <button class="btn-logo"></button>
+            <div class="header-right">
+                <!-- <a class="active" href="#home">Home</a> -->
+                <a class="nav_link " href="#section_abbout-us">APIE MUS</a>
+                <a class="nav_link " href="#section_cards">AUTOMOBILIAI</a>
+                <a class="nav_link " href="#section_contacts"> SUSISIEKIME</a>
+            </div>
+        </nav>
     </header>
 
     <div class="header_foto"></div>
@@ -36,222 +36,218 @@
     <!-- ABOUT US SLIDERIS -->
 
     <section id="section_abbout-us" class="section-about-us">
-      <div class="slider">
-        <div class="slide">
-          <h5 class="aprasymas__header">SUZINOKITE DAUGIAU APIE MUSU IMONE!</h5>
-          <p class="aprasymas__text">
+        <div class="slider">
+            <div class="slide">
+                <h5 class="aprasymas__header">SUZINOKITE DAUGIAU APIE MUSU IMONE!</h5>
+                <p class="aprasymas__text">
             Su Hamondas.lt pagalba įsigykite, parduokite, keiskite, nuomokite transporto priemonę taupydami laiką ir pinigus. Privačiam pirkėjui ir profesionalui siūlome paslaugas grįstas patirtimi, žiniomis ir dėmesiu kokybe. 
-          </p>
-        </div>
+                </p>
+            </div>
 
-        <div class="slide">
-          <h5 class="aprasymas__header">SAVO KLIENTAMS GARANTUOJAME:</h5>
-          <p class="aprasymas__text">
-            Quisquam itaque deserunt ullam, quia ea repellendus provident,
-            ducimus neque ipsam modi voluptatibus doloremque, corrupti laborum.
-            Incidunt numquam perferendis veritatis neque repipsum dolor sit amet
-            consectetur adipisicing elit. Illo deserunt exercitationem deleniti.
-          </p>
-        </div>
+            <div class="slide">
+                <h5 class="aprasymas__header">SAVO KLIENTAMS GARANTUOJAME:</h5>
+                <p class="aprasymas__text">
+                    Quisquam itaque deserunt ullam, quia ea repellendus provident,
+                    ducimus neque ipsam modi voluptatibus doloremque, corrupti laborum.
+                    Incidunt numquam perferendis veritatis neque repipsum dolor sit amet
+                    consectetur adipisicing elit. Illo deserunt exercitationem deleniti.
+                </p>
+            </div>
 
-        <button class="slider__btn slider__btn--left">&larr;</button>
-        <button class="slider__btn slider__btn--right">&rarr;</button>
-      </div>
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+        </div>
     </section>
+    <div class="overlay hidden"></div>
 
 
     <!---->
     <!--AUTO KORTELES-->
-    
-    <section  id="section_cards" class="section_cards">
-   
+
+    <section id="section_cards" class="section_cards">
+
         <h1 class="cards_header"> SIUO METU JUMS SIULOME</h1>
-    
-       <div class="cards_grid">
 
-<!--1 kortele-->
-          <div class="cards">
-            <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
-            <h1>Mercedes</h1>
-            <p class="price">€9.999</p>
-            <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
-            <p><button data-modal="modal1" class="open_modal">Suzinoti daugiau</button></p>
-          </div>
-<!--modal 1-->
-<div class="modal hidden" id="modal1">
-  <button class="close_modal">&#x2715</button>
-  <div class="modal_content">
+        <div class="cards_grid">
+
+            <!--1 kortele-->
+            <div class="cards">
+                <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
+                <h1>Mercedes</h1>
+                <p class="price">€9.999</p>
+                <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
+                <p><button data-modal="modal1" class="open_modal">Suzinoti daugiau</button></p>
+                <div class="modal hidden" id="modal1">
+                    <button class="close_modal">&#x2715</button>
+                    <div class="modal_content">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam, illo facilis saepe, unde incidunt suscipit officia eligendi quas, quos repudiandae nihil dicta quae non minus exercitationem ab numquam! Sunt!</p>
-    <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
-    <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
-    <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
-    <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
-    <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
-    <button class="modal_btn">SUSISIEKIME</button>
-  </div>
-</div>
-<div class="overlay hidden"></div>
+                        <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
+                        <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
+                        <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
+                        <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
+                        <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
+                        <button class="modal_btn">SUSISIEKIME</button>
+                    </div>
+                </div>
+            </div>
+            <!--modal 1-->
 
-<!--2 kortele-->
-<div class="cards">
-            <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
-            <h1>BMW</h1>
-            <p class="price">€9.999</p>
-            <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
-            <p><button data-modal="modal2" class="open_modal">Suzinoti daugiau</button></p>
-</div>
-<!--modal 2-->
-          <div class="modal hidden" id="modal2">
-            <button class="close_modal">&#x2715</button>
-            <div class="modal_content">
+            <!--2 kortele-->
+            <div class="cards">
+                <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
+                <h1>BMW</h1>
+                <p class="price">€9.999</p>
+                <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
+                <p><button data-modal="modal2" class="open_modal">Suzinoti daugiau</button></p>
+                <div class="modal hidden" id="modal2">
+                    <button class="close_modal">&#x2715</button>
+                    <div class="modal_content">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam, illo facilis saepe, unde incidunt suscipit officia eligendi quas, quos repudiandae nihil dicta quae non minus exercitationem ab numquam! Sunt!</p>
-              <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
-              <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
-              <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
-              <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
-              <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
-              <button class="modal_btn">SUSISIEKIME</button>
+                        <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
+                        <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
+                        <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
+                        <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
+                        <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
+                        <button class="modal_btn">SUSISIEKIME</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="overlay hidden"></div>
-  
-      
-<!--3 kortele-->
-<div class="cards">
-            <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
-            <h1>Opel</h1>
-            <p class="price">€9.999</p>
-            <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
-            <p><button data-modal="modal3" class="open_modal">Suzinoti daugiau</button></p>         
-</div>
-<!--3 modal-->
-<div class="modal hidden" id="modal3">
-  <button class="close_modal">&#x2715</button>
-  <div class="modal_content">
+            <!--modal 2-->
+
+
+            <!--3 kortele-->
+            <div class="cards">
+                <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
+                <h1>Opel</h1>
+                <p class="price">€9.999</p>
+                <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
+                <p><button data-modal="modal3" class="open_modal">Suzinoti daugiau</button></p>
+                <div class="modal hidden" id="modal3">
+                    <button class="close_modal">&#x2715</button>
+                    <div class="modal_content">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam, illo facilis saepe, unde incidunt suscipit officia eligendi quas, quos repudiandae nihil dicta quae non minus exercitationem ab numquam! Sunt!</p>
-    <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
-    <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
-    <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
-    <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
-    <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
-    <button class="modal_btn">SUSISIEKIME</button>
-</div>
-</div>
-<div class="overlay hidden"></div>
-
-<!--4 kortele-->
-<div class="cards">
-            <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
-            <h1>VW</h1>
-            <p class="price">€9.999</p>
-            <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
-            <p><button data-modal="modal4" class="open_modal">Suzinoti daugiau</button></p>
-</div>
-<!--4 modal-->
-            <div class="modal hidden" id="modal4">
-              <button class="close_modal">&#x2715</button>
-              <div class="modal_content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam, illo facilis saepe, unde incidunt suscipit officia eligendi quas, quos repudiandae nihil dicta quae non minus exercitationem ab numquam! Sunt!</p>
-                <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
-                <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
-                <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
-                <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
-                <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
-                <button class="modal_btn">SUSISIEKIME</button>
-              </div>
+                        <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
+                        <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
+                        <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
+                        <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
+                        <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
+                        <button class="modal_btn">SUSISIEKIME</button>
+                    </div>
+                </div>
             </div>
-    <div class="overlay hidden"></div>
+            <!--3 modal-->
 
-<!--5 kortele-->
-<div class="cards">
-            <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
-            <h1>Honda</h1>
-            <p class="price">€9.999</p>
-            <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
-            <p><button data-modal="modal5" class="open_modal">Suzinoti daugiau</button></p>
-</div>
-<!--5 modal-->
-            <div class="modal hidden" id="modal5">
-              <button class="close_modal">&#x2715</button>
-              <div class="modal_content">
+            <!--4 kortele-->
+            <div class="cards">
+                <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
+                <h1>VW</h1>
+                <p class="price">€9.999</p>
+                <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
+                <p><button data-modal="modal4" class="open_modal">Suzinoti daugiau</button></p>
+                <!--4 modal-->
+                <div class="modal hidden" id="modal4">
+                    <button class="close_modal">&#x2715</button>
+                    <div class="modal_content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam, illo facilis saepe, unde incidunt suscipit officia eligendi quas, quos repudiandae nihil dicta quae non minus exercitationem ab numquam! Sunt!</p>
-                <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
-                <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
-                <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
-                <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
-                <button class="modal_btn">SUSISIEKIME</button>
-              </div>
+                        <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
+                        <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
+                        <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
+                        <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
+                        <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
+                        <button class="modal_btn">SUSISIEKIME</button>
+                    </div>
+                </div>
             </div>
-    <div class="overlay hidden"></div>
+
+            <!--5 kortele-->
+            <div class="cards">
+                <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
+                <h1>Honda</h1>
+                <p class="price">€9.999</p>
+                <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
+                <p><button data-modal="modal5" class="open_modal">Suzinoti daugiau</button></p>
+                <!--5 modal-->
+                <div class="modal hidden" id="modal5">
+                    <button class="close_modal">&#x2715</button>
+                    <div class="modal_content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam, illo facilis saepe, unde incidunt suscipit officia eligendi quas, quos repudiandae nihil dicta quae non minus exercitationem ab numquam! Sunt!</p>
+                        <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
+                        <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
+                        <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
+                        <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
+                        <button class="modal_btn">SUSISIEKIME</button>
+                    </div>
+                </div>
+            </div>
 
 
-</div>
- </section> 
-     
-<!---->
-<!--KONTAKTU FORMA-->
+        </div>
+    </section>
 
-      <section id="section_contacts">
+    <!---->
+    <!--KONTAKTU FORMA-->
+
+    <section id="section_contacts">
 
         <h1 class="contacts_header"> SUSISIEKITE SU MUMIS!</h1>
 
-  <div class="container">
-    <form>
-    
-    <div class="row">
-      <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Vardas ">
-      </div>
-    </div>
+        <div class="container">
+            <form>
 
-    <div class="row">
-    <div class="col-75">
-      <input type="text" id="fname" name="elpastas" placeholder=" E-mail">
-    </div>
-  </div>
+                <div class="row">
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Vardas ">
+                    </div>
+                </div>
 
-    <div class="row">
-      <div class="col-75">
-        <input type="text" id="lname" name="telefonas" placeholder=" Telefonas">
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="JUSU ZINUTE" style="height:300px"></textarea>
-      </div>
-    </div>
-  
-      <button class="contact_btn" type="submit" value="Submit">SIUSTI ZINUTE</button>
+                <div class="row">
+                    <div class="col-75">
+                        <input type="text" id="fname" name="elpastas" placeholder=" E-mail">
+                    </div>
+                </div>
 
-  </form>
-  </div>
-</section>  
-  
-    
-<!--FOOTERIS-->
-<section id="section_footer">
-    <footer class="footer">
-      <div class="contact_adresas">
-        <p>Chemiku 14-12</p>
-        <p>Kedainiai 5037</p>
-        <p>lietuva</p>
-      </div>
+                <div class="row">
+                    <div class="col-75">
+                        <input type="text" id="lname" name="telefonas" placeholder=" Telefonas">
+                    </div>
+                </div>
 
-      <div class="contact_telefonas">
-        <p>Arnas Petrauskas</p>
-        <p>blabla@gmail.com</p>
-        <p>+370 657 8883</p>
-      </div>
+                <div class="row">
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="JUSU ZINUTE" style="height:300px"></textarea>
+                    </div>
+                </div>
 
-      <div class="footer_rights">
-        <p>All rights </p>
-        <p>blabla@gmail.com</p>
-        <p>+370 657 8883</p>
-      </div>
+                <button class="contact_btn" type="submit" value="Submit">SIUSTI ZINUTE</button>
+
+            </form>
+        </div>
+    </section>
 
 
-    </footer>
-  </section>
-  </body>
+    <!--FOOTERIS-->
+    <section id="section_footer">
+        <footer class="footer">
+            <div class="contact_adresas">
+                <p>Chemiku 14-12</p>
+                <p>Kedainiai 5037</p>
+                <p>lietuva</p>
+            </div>
+
+            <div class="contact_telefonas">
+                <p>Arnas Petrauskas</p>
+                <p>blabla@gmail.com</p>
+                <p>+370 657 8883</p>
+            </div>
+
+            <div class="footer_rights">
+                <p>All rights </p>
+                <p>blabla@gmail.com</p>
+                <p>+370 657 8883</p>
+            </div>
+
+
+        </footer>
+    </section>
+</body>
 </html>

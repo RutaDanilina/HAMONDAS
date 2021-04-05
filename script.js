@@ -71,24 +71,28 @@ slider();
 //////////////////////////////////////////////
 //masinu korteles
 
-const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close_modal");
 const btnOpenModal = document.querySelectorAll(".open_modal");
+let modal;
 
 const openModal = function () {
-  modal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
+	const element = event.target;
+	modal = element.parentNode.parentNode.querySelector('.modal');
+	modal.classList.remove("hidden");
+	overlay.classList.remove("hidden");
 };
 
 const closeModal = function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
+  modal = null;
 };
 
 //keliauti per mygtukus
-for (let i = 0; i < btnOpenModal.length; i++)
-  btnOpenModal[i].addEventListener("click", openModal1);
+for (let i = 0; i < btnOpenModal.length; i++) {
+  btnOpenModal[i].addEventListener("click", openModal);
+}
 
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
@@ -102,54 +106,3 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-// const modal1 = document.getElementById("#modal1");
-// const modal2 = document.getElementById("#modal2");
-// const modal3 = document.getElementById("#modal3");
-// const modal4 = document.getElementById("#modal4");
-// const modal5 = document.getElementById("#modal5");
-
-// const openModal1 = function () {
-//   // modal.getAttribute("data_modal");
-//   modal.classList.remove("hidden");
-//   overlay.classList.remove("hidden");
-// };
-
-// const openModal2 = function () {
-//   // modal.getAttribute("data_modal");
-//   modal.classList.remove("hidden");
-//   overlay.classList.remove("hidden");
-// };
-
-// const openModal3 = function () {
-//   // modal.getAttribute("data_modal");
-//   modal.classList.remove("hidden");
-//   overlay.classList.remove("hidden");
-// };
-
-// const openModal4 = function () {
-//   // modal.getAttribute("data_modal");
-//   modal.classList.remove("hidden");
-//   overlay.classList.remove("hidden");
-// };
-
-// const openModal5 = function () {
-//   // modal.getAttribute("data_modal");
-//   modal.classList.remove("hidden");
-//   overlay.classList.remove("hidden");
-// };
-
-// const openModal = function () {
-//   // modal.getAttribute("data_modal");
-//   modal.classList.remove("hidden");
-//   overlay.classList.remove("hidden");
-// };
-
-// btnOpenModal.forEach(function (btn) {
-//   btn.onclick = function () {
-//     const modal = btn.getAttribute("data-modal");
-
-//     document.getElementById(modal).style.display = "block";
-//   };
-// });
-/////////////////////////////////////////////
-//contacts
