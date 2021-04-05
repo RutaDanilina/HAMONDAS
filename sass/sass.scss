@@ -1,0 +1,32 @@
+@import "_variables.scss";
+@import "_header.scss";
+@import "_aboutus.scss";
+@import "_autos.scss";
+@import "_contacts.scss";
+@import "_footer.scss";
+
+// PAGRINDINIAI PROPERCIAI
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: $-dark-color-1;
+  line-height: 1.9;
+  background-color: $-light-color-0;
+}

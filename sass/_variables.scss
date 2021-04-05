@@ -1,0 +1,28 @@
+//media queries
+$breakpoint_tablet: 680px;
+$breakpoint_desktop: 1040px;
+$max_header_width: 1200px;
+
+//animacijos
+$transition_link: 0.14s ease-in-out;
+$transition_anim: 0.22s ease-in-out;
+
+//spalvos
+$-primary-color-0: #2f9173;
+// $-primary-color-1: #0e365c;
+$-primary-color-1: #11644b;
+$-primary-color-2: #c98022;
+$-primary-color-3: #f1c86e;
+$-light-color-0: white;
+$-light-color-1: #d8d8d8;
+$-light-color-2: #949393;
+$-light-color-3: #797979;
+$-dark-color-1: #222222;
+$-dark-color-2: rgba(7, 7, 7, 0.533);
+
+// $-primary-1-gradiant: linear-gradient(
+//   90deg,
+//   rgba(22, 139, 104, 1) 0%,
+//   rgba(18, 101, 76, 1) 55%,
+//   rgba(13, 78, 58, 1) 100%
+// );

@@ -1,0 +1,117 @@
+.header_container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0.2rem 0 0 0;
+  padding: 0.2rem 0 0 0;
+}
+
+.nav_bar {
+  overflow: hidden;
+  width: 100%;
+  background-color: $-light-color-0;
+  border-bottom: 0.1rem solid rgb(238, 176, 42);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.header_container .btn-logo a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  float: left;
+  color: $-primary-color-1;
+  text-align: center;
+  padding: 0.3rem 1.5rem 0 1.3rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  border-radius: 0.2rem;
+  letter-spacing: 0.1rem;
+}
+
+a:hover {
+  background-color: $-primary-color-1;
+  color: $-light-color-0;
+  padding-bottom: 0;
+  opacity: 0.8;
+
+  transition: background 0.8s ease-in;
+}
+
+a:active {
+  background-color: $-primary-color-1;
+  color: $-light-color-0;
+}
+
+.btn-logo {
+  margin-top: 0.3rem;
+  margin-left: 0.2rem;
+  border: none;
+  float: left;
+  background-color: $-light-color-0;
+  background-image: url("../foto/logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25%;
+  height: 2.5rem;
+}
+
+.header-right {
+  float: right;
+}
+
+.header_foto {
+  background-image: linear-gradient(
+      320deg,
+      rgba(46, 45, 43, 1) 18%,
+      rgba(14, 85, 81, 0.4242424242424242) 51%,
+      rgba(2, 30, 32, 0) 72%
+    ),
+    url("../foto/auto_header.jpeg");
+  opacity: 0.8;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 30rem;
+  border-top: 0.1rem solid rgb(238, 176, 42);
+  z-index: 99;
+  margin-bottom: 2rem;
+  margin-top: 2.5rem;
+}
+
+/* Mediaqueris header foto */
+@media screen and (max-width: 40rem) {
+  .header_foto {
+    width: 100%;
+    height: 25rem;
+    margin-top: 0rem;
+  }
+}
+
+/* Mediaqueris nav  barui */
+@media screen and (max-width: 40rem) {
+  // header[role="banner"] {
+  header {
+    .btn-logo {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .header-right {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    float: none;
+    padding-left: 0;
+
+    a {
+      font-size: 1.1rem;
+    }
+  }
+}

@@ -1,0 +1,273 @@
+.header_container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0px;
+}
+
+.header_container a {
+  float: left;
+  color: #11644b;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  border-radius: 0.4rem;
+}
+
+.header_container a:hover {
+  background-color: #11644b;
+  color: white;
+}
+
+.header a.active {
+  background-color: #11644b;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+/* Mediaqueris nav  barui */
+@media screen and (max-width: 40rem) {
+  .header_container a {
+    float: none;
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
+
+.header-right {
+  float: none;
+}
+
+.header_foto {
+  background-image: linear-gradient(320deg, #2e2d2b 18%, rgba(14, 85, 81, 0.424242) 51%, rgba(2, 30, 32, 0) 72%), url(/foto/auto_header.jpeg);
+  opacity: 0.8;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+  margin-top: 5rem;
+  border-top: 0.1rem solid #eeb02a;
+  z-index: 99;
+}
+
+@media screen and (max-width: 40rem) {
+  .header_foto {
+    width: 100%;
+    height: 30rem;
+    margin-top: 1rem;
+  }
+}
+
+/* KONTENTAS- ABOUT US */
+.slider {
+  max-width: 100rem;
+  height: 60rem;
+  margin: 1 auto;
+  position: relative;
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 19%;
+  z-index: 10;
+  border: none;
+  background: var(--color-light--3);
+  font-family: inherit;
+  color: var(--color-brand--4);
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+  font-size: 2.25rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.slider__btn--left {
+  left: 6%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+/* aprasymai */
+.aprasymas__header {
+  text-shadow: 0.02rem 0.02rem #eeb02a;
+  font-weight: 700;
+  margin: 1rem 9rem 0 10.5rem;
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-brand--3);
+}
+
+.aprasymas__text {
+  margin: 0 9rem 0 10.5rem;
+  font-size: 1.7rem;
+  margin-bottom: 3.5rem;
+  color: #181717;
+}
+
+.section__title--aprasymas {
+  margin-bottom: 4rem;
+}
+
+/* KONTENTAS- MASINU PAVYZDZIAMS */
+.cards_header {
+  text-shadow: 0.02rem 0.02rem #eeb02a;
+  position: absolute;
+  margin-left: 8.9%;
+  color: var(--color-brand--3);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  top: 85%;
+}
+
+.section_cards {
+  margin-top: -40%;
+  margin-left: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-auto-rows: minmax(30rem, auto);
+}
+
+.cards {
+  margin: 2rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0.01rem 0.01rem 0.8rem var(--color-dark--1);
+          box-shadow: 0.01rem 0.01rem 0.8rem var(--color-dark--1);
+  max-width: 30rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #181717;
+}
+
+.card_1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.card_2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 /3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.card_3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.card_4 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 /3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.card_5 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.card_6 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 /3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.price {
+  color: var(--color-brand--5);
+  font-size: 22px;
+  text-shadow: 0.1rem 0.1rem #145b57;
+}
+
+.cards button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: var(--color-brand--2);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.cards button:hover {
+  background-color: var(--color-brand--3);
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: white;
+}
+/*# sourceMappingURL=sass.css.map */

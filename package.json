@@ -1,0 +1,11 @@
+{
+  "name": "hamondas-mb",
+  "version": "1.0.0",
+  "description": "Naudotos Auto",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass --watch sass/sass.scss:css/style.css"
+  },
+  "author": "Ruta Danilina",
+  "license": "ISC"
+}

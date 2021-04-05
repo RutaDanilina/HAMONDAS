@@ -1,0 +1,137 @@
+#section_contacts {
+  border-top: 0.1rem solid rgb(238, 176, 42);
+  width: 100%;
+  padding-bottom: 5rem;
+  margin: auto;
+  background-image: linear-gradient(
+      320deg,
+      rgba(46, 45, 43, 1) 18%,
+      rgba(14, 85, 81, 0.4242424242424242) 51%,
+      rgba(2, 30, 32, 0) 72%
+    ),
+    url("../foto/form.jpeg");
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+}
+
+.contacts_header {
+  text-shadow: 0.02rem 0.09rem 0.02rem $-primary-color-1;
+  font-weight: 700;
+  margin: auto;
+  width: 50%;
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 3rem;
+  color: $-light-color-0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-left: 20%;
+  border-radius: 0.5rem;
+  justify-content: center;
+}
+
+input[type="text"],
+select,
+textarea {
+  text-align: center;
+  color: $-dark-color-1;
+  width: 100%;
+  padding: 1.2rem;
+  border: 0.02rem solid $-primary-color-1;
+  border-radius: 0.4rem;
+  resize: vertical;
+  background: rgba(255, 255, 255, 0.685);
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 0.6rem;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 0.6rem;
+}
+
+/* isvalyti floatsus po columnsu */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact_btn {
+  margin: 0.8rem 0 2rem 0;
+  padding: 1.5rem;
+  width: 75.44%;
+  background-color: $-primary-color-2;
+  color: $-light-color-0;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  border-radius: 0.7rem;
+  outline: none;
+  text-shadow: 0.02rem 0.09rem 0.02rem $-primary-color-1;
+  letter-spacing: 0.5rem;
+
+  &:hover {
+    background-color: $-primary-color-1;
+    color: $-light-color-0;
+    transition: background 0.8s ease-in;
+  }
+}
+
+textarea::placeholder {
+  text-transform: uppercase;
+  color: $-light-color-2;
+  font-size: 1.4rem;
+}
+input::placeholder {
+  text-transform: uppercase;
+  color: $-light-color-2;
+  font-size: 1.2rem;
+}
+
+///////////////////////////////////////////
+//media queriai
+@media screen and (max-width: 600px) {
+  #section_contacts {
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+
+  .contacts_header {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  input[type="text"],
+  select,
+  textarea {
+    padding: 1rem;
+  }
+
+  .col-25 .col-75 {
+    margin-top: 0.4rem;
+  }
+
+  .contact_btn {
+    padding: 1.2rem;
+    letter-spacing: 0.3rem;
+  }
+}
