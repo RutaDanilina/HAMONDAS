@@ -72,7 +72,7 @@ slider();
 //masinu korteles
 
 const overlay = document.querySelector(".overlay");
-const btnCloseModal = document.querySelector(".close_modal");
+const btnCloseModal = document.querySelectorAll(".modal .close_modal");
 const btnOpenModal = document.querySelectorAll(".open_modal");
 let modal;
 
@@ -93,8 +93,10 @@ const closeModal = function () {
 for (let i = 0; i < btnOpenModal.length; i++) {
   btnOpenModal[i].addEventListener("click", openModal);
 }
+for (let i = 0; i < btnCloseModal.length; i++) {
+  btnCloseModal[i].addEventListener("click", closeModal);
+}
 
-btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
 //isjungimas escape

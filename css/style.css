@@ -291,6 +291,10 @@ a:active {
   z-index: 110;
 }
 
+.modal .close_modal {
+  width: 40px;
+}
+
 .overlay {
   position: fixed;
   top: 0;
