@@ -6,67 +6,13 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: $-light-color-0;
   padding: 0.2rem;
-
-  ul {
-    padding: 0.5rem;
-  }
 }
 
 .container_footer {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
   justify-content: center;
   width: 100%;
   height: auto;
-}
-
-.footer-day-time {
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5remrem;
-  display: block;
-
-  li {
-    position: relative;
-    margin-right: 14px;
-    font-size: 1rem;
-    top: 5px;
-  }
-
-  i {
-    height: 1rem;
-    width: auto;
-  }
-}
-
-.darbo_laikas {
-  font-weight: 700;
-  padding: 0.4rem;
-}
-
-.address1 {
-  // margin: auto;
-  padding-right: 4rem;
-  display: inline-flexbox;
-  color: $-light-color-0;
-  text-align: center;
-
-  li {
-    display: flex;
-    margin: 0.4rem;
-    font-size: 1rem;
-
-    i {
-      font-size: 1.8rem;
-      width: auto;
-      color: $-light-color-0;
-      margin-right: 0.8rem;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    color: $-light-color-0;
-  }
 }
 
 .footer-bottom {
