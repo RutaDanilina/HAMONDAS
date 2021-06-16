@@ -5,7 +5,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
+
+
     <link rel="stylesheet" href="css/style.css" />
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     <script defer src="script.js"></script>
 
@@ -13,7 +17,7 @@
 </head>
 
 <body>
-
+  
     <!---->
     <!-- HEADERIS -->
 
@@ -23,7 +27,7 @@
             <button class="btn-logo"></button>
             <div class="header-right">
                 <!-- <a class="active" href="#home">Home</a> -->
-                <a class="nav_link " href="#section_abbout-us">APIE MUS</a>
+                <a class="nav_link" href="#section_abbout-us">APIE MUS</a>
                 <a class="nav_link " href="#section_cards">AUTOMOBILIAI</a>
                 <a class="nav_link " href="#section_contacts"> SUSISIEKIME</a>
             </div>
@@ -72,21 +76,70 @@
 
             <!--1 kortele-->
             <div class="cards">
-                <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
+                <img class="card_img" src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
                 <h1>Mercedes</h1>
                 <p class="price">€9.999</p>
                 <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
                 <p><button data-modal="modal1" class="open_modal">Suzinoti daugiau</button></p>
+
                 <div class="modal hidden" id="modal1">
                     <button class="close_modal">&#x2715</button>
                     <div class="modal_content">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam, illo facilis saepe, unde incidunt suscipit officia eligendi quas, quos repudiandae nihil dicta quae non minus exercitationem ab numquam! Sunt!</p>
-                        <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
-                        <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
-                        <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
-                        <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
-                        <img src="foto/20210218_135910.jpg" alt="Mercedes" style="width:100%">
-                        <button class="modal_btn">SUSISIEKIME</button>
+
+                        <div class="gallery">
+                        <img class="big" src="foto/20210218_135910.jpg">
+
+<div class="thumbnails">
+    <a class="gal_thumb" href="foto/20210218_135910.jpg"><img src="foto/resized/20210218_135910 small.jpg"></a>
+    <a class="gal_thumb" href="foto/20210322_100211.jpg"><img src="foto/resized/20210322_100211 small.jpg"></a>
+    <a class="gal_thumb" href="foto/20210322_153418.jpg"><img src="foto/resized/20210322_153418 small.jpg"></a>
+</div> 
+                        </div>
+
+                        <div class="aprasymas_placiau">
+                            
+                            <div class="iconeles">                            
+                                <div class="iconeles_blokas">
+                                 <i class="small material-icons">drive_eta</i>  <p> SEDANAS</p>
+                                </div>
+
+                                 <div class="iconeles_blokas">
+                                <i class="small material-icons">local_gas_station
+                                </i> <p>BENZINAS </p>
+                                 </div>
+
+                                <div class="iconeles_blokas">
+                                <i class="small material-icons">insert_invitation</i><p>2010</p>
+                                </div>
+
+                                <div class="iconeles_blokas">
+                                <i class="small material-icons">slow_motion_video
+                                </i><p> 200.000</p>
+                                </div>
+
+                                <div class="iconeles_blokas">
+                                <img src="foto/transmission_manual-512.png" style="height: 2rem; width: auto;"><p> MECHANINE </p>
+                                </div>
+
+                            </div>
+                            
+                            <div class="apie_auto">             
+                                <p> <i class="md-18 material-icons">done</i> Stoglangis   </p>    
+                                <p> <i class="md-18 material-icons">done</i> Sildomos sedynes  </p>  
+                                <p> <i class="md-18 material-icons">done</i> El. veidrodeliai   </p>  
+                                <p> <i class="md-18 material-icons">done</i> Kondicionierius   </p>          
+                                <p> <i class="md-18 material-icons">done</i> Odinis salonas  </p>  
+                                <p> <i class="md-18 material-icons">done</i> Sildomi langai   </p>   
+                                <p> <i class="tiny material-icons">done</i> USB    </p>  
+                                <p> <i class="md-18 material-icons">done</i> Serviso knygele   </p>     
+                                <p> <i class="md-18   material-icons">done</i> Antras padangu komplektas  </p>     
+                                <p> <i class="md-18 material-icons">done</i> Autopilotas   </p>        
+                            </div>
+
+                        </div>
+                        <footer class="modal_footer">
+                        <a class="modal_btn " href="#section_contacts"> SUSISIEKIME</a>
+                        </footer>
                     </div>
                 </div>
             </div>
@@ -94,7 +147,7 @@
 
             <!--2 kortele-->
             <div class="cards">
-                <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
+                <img class="card_img" src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
                 <h1>BMW</h1>
                 <p class="price">€9.999</p>
                 <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
@@ -102,13 +155,60 @@
                 <div class="modal hidden" id="modal2">
                     <button class="close_modal">&#x2715</button>
                     <div class="modal_content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam, illo facilis saepe, unde incidunt suscipit officia eligendi quas, quos repudiandae nihil dicta quae non minus exercitationem ab numquam! Sunt!</p>
-                        <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
-                        <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
-                        <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
-                        <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
-                        <img src="foto/20210322_100211.jpg" alt="BMW" style="width:100%">
-                        <button class="modal_btn">SUSISIEKIME</button>
+
+                        <div class="gallery">
+                            <img class="big" src="foto/20210322_100211.jpg">
+    
+    <div class="thumbnails">
+        <a class="gal_thumb" href="foto/20210218_135910.jpg"><img src="foto/resized/20210218_135910 small.jpg"></a>
+        <a class="gal_thumb" href="foto/20210322_100211.jpg"><img src="foto/resized/20210322_100211 small.jpg"></a>
+        <a class="gal_thumb" href="foto/20210322_153418.jpg"><img src="foto/resized/20210322_153418 small.jpg"></a>
+    </div> 
+                            </div>
+
+                        <div class="aprasymas_placiau">
+                            
+                            <div class="iconeles">                            
+                                <div class="iconeles_blokas">
+                                 <i class="small material-icons">drive_eta</i>  <p> SEDANAS</p>
+                                </div>
+
+                                 <div class="iconeles_blokas">
+                                <i class="small material-icons">local_gas_station
+                                </i> <p>BENZINAS </p>
+                                 </div>
+
+                                <div class="iconeles_blokas">
+                                <i class="small material-icons">insert_invitation</i><p>2010</p>
+                                </div>
+
+                                <div class="iconeles_blokas">
+                                <i class="small material-icons">slow_motion_video
+                                </i><p> 200.000</p>
+                                </div>
+
+                                <div class="iconeles_blokas">
+                                <img src="foto/transmission_manual-512.png" style="height: 2rem; width: auto;"><p> MECHANINE </p>
+                                </div>
+                            </div>
+                            
+                            <div class="apie_auto">             
+                                <p> <i class="md-18 material-icons">done</i> Stoglangis   </p>    
+                                <p> <i class="md-18 material-icons">done</i> Sildomos sedynes  </p>  
+                                <p> <i class="md-18 material-icons">done</i> El. veidrodeliai   </p>  
+                                <p> <i class="md-18 material-icons">done</i> Kondicionierius   </p>          
+                                <p> <i class="md-18 material-icons">done</i> Odinis salonas  </p>  
+                                <p> <i class="md-18 material-icons">done</i> Sildomi langai   </p>   
+                                <p> <i class="tiny material-icons">done</i> USB    </p>  
+                                <p> <i class="md-18 material-icons">done</i> Serviso knygele   </p>     
+                                <p> <i class="md-18   material-icons">done</i> Antras padangu komplektas  </p>     
+                                <p> <i class="md-18 material-icons">done</i> Autopilotas   </p>        
+                            </div>
+
+                        </div>
+                        <footer class="modal_footer">
+                        <a class="modal_btn " href="#section_contacts"> SUSISIEKIME</a>
+                        </footer>
                     </div>
                 </div>
             </div>
@@ -117,7 +217,7 @@
 
             <!--3 kortele-->
             <div class="cards">
-                <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
+                <img class="card_img" src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
                 <h1>Opel</h1>
                 <p class="price">€9.999</p>
                 <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
@@ -125,21 +225,66 @@
                 <div class="modal hidden" id="modal3">
                     <button class="close_modal">&#x2715</button>
                     <div class="modal_content">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam, illo facilis saepe, unde incidunt suscipit officia eligendi quas, quos repudiandae nihil dicta quae non minus exercitationem ab numquam! Sunt!</p>
-                        <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
-                        <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
-                        <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
-                        <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
-                        <img src="foto/20210322_153418.jpg" alt="Opel" style="width:100%">
-                        <button class="modal_btn">SUSISIEKIME</button>
-                    </div>
+                        <div class="gallery">
+                            <img class="big" src="foto/20210322_153418.jpg">
+    
+    <div class="thumbnails">
+        <a class="gal_thumb" href="foto/20210218_135910.jpg"><img src="foto/resized/20210218_135910 small.jpg"></a>
+        <a class="gal_thumb" href="foto/20210322_100211.jpg"><img src="foto/resized/20210322_100211 small.jpg"></a>
+        <a class="gal_thumb" href="foto/20210322_153418.jpg"><img src="foto/resized/20210322_153418 small.jpg"></a>
+    </div> 
+                            </div>
+  <div class="aprasymas_placiau">
+                            
+    <div class="iconeles">                            
+        <div class="iconeles_blokas">
+         <i class="small material-icons">drive_eta</i>  <p> SEDANAS</p>
+        </div>
+
+         <div class="iconeles_blokas">
+        <i class="small material-icons">local_gas_station
+        </i> <p>BENZINAS </p>
+         </div>
+
+        <div class="iconeles_blokas">
+        <i class="small material-icons">insert_invitation</i><p>2010</p>
+        </div>
+
+        <div class="iconeles_blokas">
+        <i class="small material-icons">slow_motion_video
+        </i><p> 200.000</p>
+        </div>
+
+        <div class="iconeles_blokas">
+        <img src="foto/transmission_manual-512.png" style="height: 2rem; width: auto;"><p> MECHANINE </p>
+        </div>
+    </div>
+    
+    <div class="apie_auto">             
+        <p> <i class="md-18 material-icons">done</i> Stoglangis   </p>    
+        <p> <i class="md-18 material-icons">done</i> Sildomos sedynes  </p>  
+        <p> <i class="md-18 material-icons">done</i> El. veidrodeliai   </p>  
+        <p> <i class="md-18 material-icons">done</i> Kondicionierius   </p>          
+        <p> <i class="md-18 material-icons">done</i> Odinis salonas  </p>  
+        <p> <i class="md-18 material-icons">done</i> Sildomi langai   </p>   
+        <p> <i class="tiny material-icons">done</i> USB    </p>  
+        <p> <i class="md-18 material-icons">done</i> Serviso knygele   </p>     
+        <p> <i class="md-18   material-icons">done</i> Antras padangu komplektas  </p>     
+        <p> <i class="md-18 material-icons">done</i> Autopilotas   </p>        
+    </div>
+
+</div>
+<footer class="modal_footer">
+<a class="modal_btn " href="#section_contacts"> SUSISIEKIME</a>
+</footer>
+</div>
                 </div>
             </div>
             <!--3 modal-->
 
             <!--4 kortele-->
             <div class="cards">
-                <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
+                <img  class="card_img" src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
                 <h1>VW</h1>
                 <p class="price">€9.999</p>
                 <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
@@ -148,20 +293,66 @@
                 <div class="modal hidden" id="modal4">
                     <button class="close_modal">&#x2715</button>
                     <div class="modal_content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam, illo facilis saepe, unde incidunt suscipit officia eligendi quas, quos repudiandae nihil dicta quae non minus exercitationem ab numquam! Sunt!</p>
-                        <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
-                        <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
-                        <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
-                        <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
-                        <img src="foto/20210324_100816.jpg" alt="VW" style="width:100%">
-                        <button class="modal_btn">SUSISIEKIME</button>
+                        <div class="gallery">
+                            <img class="big" src="foto/20210324_100816.jpg">
+    
+    <div class="thumbnails">
+        <a class="gal_thumb"  href="foto/20210218_135910.jpg"><img src="foto/resized/20210218_135910 small.jpg"></a>
+        <a class="gal_thumb" href="foto/20210322_100211.jpg"><img src="foto/resized/20210322_100211 small.jpg"></a>
+        <a class="gal_thumb" href="foto/20210322_153418.jpg"><img src="foto/resized/20210322_153418 small.jpg"></a>
+    </div> 
+                            </div>
+
+                        <div class="aprasymas_placiau">
+                            
+                            <div class="iconeles">                            
+                                <div class="iconeles_blokas">
+                                 <i class="small material-icons">drive_eta</i>  <p> SEDANAS</p>
+                                </div>
+
+                                 <div class="iconeles_blokas">
+                                <i class="small material-icons">local_gas_station
+                                </i> <p>BENZINAS </p>
+                                 </div>
+
+                                <div class="iconeles_blokas">
+                                <i class="small material-icons">insert_invitation</i><p>2010</p>
+                                </div>
+
+                                <div class="iconeles_blokas">
+                                <i class="small material-icons">slow_motion_video
+                                </i><p> 200.000</p>
+                                </div>
+
+                                <div class="iconeles_blokas">
+                                <img src="foto/transmission_manual-512.png" style="height: 2rem; width: auto;"><p> MECHANINE </p>
+                                </div>
+                            </div>
+                            
+                            <div class="apie_auto">             
+                                <p> <i class="md-18 material-icons">done</i> Stoglangis   </p>    
+                                <p> <i class="md-18 material-icons">done</i> Sildomos sedynes  </p>  
+                                <p> <i class="md-18 material-icons">done</i> El. veidrodeliai   </p>  
+                                <p> <i class="md-18 material-icons">done</i> Kondicionierius   </p>          
+                                <p> <i class="md-18 material-icons">done</i> Odinis salonas  </p>  
+                                <p> <i class="md-18 material-icons">done</i> Sildomi langai   </p>   
+                                <p> <i class="tiny material-icons">done</i> USB    </p>  
+                                <p> <i class="md-18 material-icons">done</i> Serviso knygele   </p>     
+                                <p> <i class="md-18   material-icons">done</i> Antras padangu komplektas  </p>     
+                                <p> <i class="md-18 material-icons">done</i> Autopilotas   </p>        
+                            </div>
+
+                        </div>
+                        <footer class="modal_footer">
+                        <a class="modal_btn " href="#section_contacts"> SUSISIEKIME</a>
+                        </footer>
                     </div>
                 </div>
             </div>
 
             <!--5 kortele-->
             <div class="cards">
-                <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
+                <img class="card_img" src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
                 <h1>Honda</h1>
                 <p class="price">€9.999</p>
                 <p>⚙ Vienatūris ⚙ 2010 ⚙ Dyzelinas ⚙ Automatas ⚙ Rida: 130.000</p>
@@ -170,12 +361,58 @@
                 <div class="modal hidden" id="modal5">
                     <button class="close_modal">&#x2715</button>
                     <div class="modal_content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam, illo facilis saepe, unde incidunt suscipit officia eligendi quas, quos repudiandae nihil dicta quae non minus exercitationem ab numquam! Sunt!</p>
-                        <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
-                        <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
-                        <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
-                        <img src="foto/20210331_133748.jpg" alt="Honda" style="width:100%">
-                        <button class="modal_btn">SUSISIEKIME</button>
+                        <div class="gallery">
+                            <img class="big" src="foto/20210331_133748.jpg">
+    
+    <div class="thumbnails">
+        <a class="gal_thumb" href="foto/20210218_135910.jpg"><img src="foto/resized/20210218_135910 small.jpg"></a>
+        <a class="gal_thumb" href="foto/20210322_100211.jpg"><img src="foto/resized/20210322_100211 small.jpg"></a>
+        <a class="gal_thumb" href="foto/20210322_153418.jpg"><img src="foto/resized/20210322_153418 small.jpg"></a>
+    </div> 
+                            </div>
+                        <div class="aprasymas_placiau">
+                            
+                            <div class="iconeles">                            
+                                <div class="iconeles_blokas">
+                                 <i class="small material-icons">drive_eta</i>  <p> SEDANAS</p>
+                                </div>
+
+                                 <div class="iconeles_blokas">
+                                <i class="small material-icons">local_gas_station
+                                </i> <p>BENZINAS </p>
+                                 </div>
+
+                                <div class="iconeles_blokas">
+                                <i class="small material-icons">insert_invitation</i><p>2010</p>
+                                </div>
+
+                                <div class="iconeles_blokas">
+                                <i class="small material-icons">slow_motion_video
+                                </i><p> 200.000</p>
+                                </div>
+
+                                <div class="iconeles_blokas">
+                                <img src="foto/transmission_manual-512.png" style="height: 2rem; width: auto;"><p> MECHANINE </p>
+                                </div>
+                            </div>
+                            
+                            <div class="apie_auto">             
+                                <p> <i class="md-18 material-icons">done</i> Stoglangis   </p>    
+                                <p> <i class="md-18 material-icons">done</i> Sildomos sedynes  </p>  
+                                <p> <i class="md-18 material-icons">done</i> El. veidrodeliai   </p>  
+                                <p> <i class="md-18 material-icons">done</i> Kondicionierius   </p>          
+                                <p> <i class="md-18 material-icons">done</i> Odinis salonas  </p>  
+                                <p> <i class="md-18 material-icons">done</i> Sildomi langai   </p>   
+                                <p> <i class="tiny material-icons">done</i> USB    </p>  
+                                <p> <i class="md-18 material-icons">done</i> Serviso knygele   </p>     
+                                <p> <i class="md-18   material-icons">done</i> Antras padangu komplektas  </p>     
+                                <p> <i class="md-18 material-icons">done</i> Autopilotas   </p>        
+                            </div>
+
+                        </div>
+                        <footer class="modal_footer">
+                        <a class="modal_btn " href="#section_contacts"> SUSISIEKIME</a>
+                        </footer>
                     </div>
                 </div>
             </div>
@@ -196,27 +433,31 @@
 
                 <div class="row">
                     <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Vardas ">
+                        <input type="text"  name="name" placeholder="Vardas ">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-75">
-                        <input type="text" id="fname" name="elpastas" placeholder=" E-mail">
+                        <input type="text" name="elpastas" placeholder=" E-mail">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-75">
-                        <input type="text" id="lname" name="telefonas" placeholder=" Telefonas">
+                        <input type="text"  name="telefonas" placeholder=" Telefonas">
                     </div>
                 </div>
+
+               
 
                 <div class="row">
                     <div class="col-75">
                         <textarea id="subject" name="subject" placeholder="JUSU ZINUTE" style="height:300px"></textarea>
                     </div>
                 </div>
+
+            
 
                 <button class="contact_btn" type="submit" value="Submit">SIUSTI ZINUTE</button>
 
@@ -227,27 +468,42 @@
 
     <!--FOOTERIS-->
     <section id="section_footer">
-        <footer class="footer">
-            <div class="contact_adresas">
-                <p>Chemiku 14-12</p>
-                <p>Kedainiai 5037</p>
-                <p>lietuva</p>
+        <footer>
+           
+                <div class="container_footer">
+
+                    
+                            <ul class="address1">
+                                <li><i class="tiny material-icons footer_icons">location_on</i>Chemiku 14, Kedainiai 5030,  Lietuva</li>
+               
+                                <li><i class="tiny material-icons footer_icons">email</i>
+                                <a href="mailto:#">arnas@gmail.com</a></li>
+                                <li><i class="tiny material-icons footer_icons">call</i><a href="tel:+370 703 037">+370 703 037</a></li>                              
+                            </ul>
+
+
+                            <div class="footer-day-time">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <ul>
+                                          <li>Pirmadienis - Penktadienis:<br> 08:00 - 19:00</li>
+                                            <li>Sestadienis - Sekmadienis:<br> 09:00  - 16:00 </li>                                               
+                                       </ul>
+                                    </div>                                  
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+            
+           
+            <div class="footer-bottom">
+                            <p class="copyright">Copyright © 2021
+                            </p>
             </div>
 
-            <div class="contact_telefonas">
-                <p>Arnas Petrauskas</p>
-                <p>blabla@gmail.com</p>
-                <p>+370 657 8883</p>
-            </div>
-
-            <div class="footer_rights">
-                <p>All rights </p>
-                <p>blabla@gmail.com</p>
-                <p>+370 657 8883</p>
-            </div>
-
-
-        </footer>
+        </footer>   
     </section>
 </body>
 </html>

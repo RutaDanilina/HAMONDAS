@@ -1,19 +1,82 @@
-.footer {
-  display: flex;
-  padding: 2rem;
-
-  //   position: fixed;
+footer {
   left: 0;
   bottom: -10;
   width: 100%;
-  height: 10rem;
-  background-color: $-dark-color-1;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: $-light-color-0;
+  padding: 0.2rem;
+
+  ul {
+    padding: 0.5rem;
+  }
+}
+
+.container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.footer-day-time {
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5remrem;
+  display: block;
+
+  li {
+    position: relative;
+    margin-right: 14px;
+    font-size: 1rem;
+    top: 5px;
+  }
+
+  i {
+    height: 1rem;
+    width: auto;
+  }
+}
+
+.darbo_laikas {
+  font-weight: 700;
+  padding: 0.4rem;
+}
+
+.address1 {
+  // margin: auto;
+  padding-right: 4rem;
+  display: inline-flexbox;
   color: $-light-color-0;
   text-align: center;
 
-  p {
-    width: 100%;
-    padding: 0.2rem 0.5rem;
-    margin: auto;
+  li {
+    display: flex;
+    margin: 0.4rem;
+    font-size: 1rem;
+
+    i {
+      font-size: 1.8rem;
+      width: auto;
+      color: $-light-color-0;
+      margin-right: 0.8rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $-light-color-0;
+  }
+}
+
+.footer-bottom {
+  background: $-primary-color-1;
+  padding: 0.2rem 0;
+
+  .copyright {
+    text-transform: uppercase;
+    background-color: $-primary-color-1;
+    font-size: 1rem;
+    text-shadow: 0 0.4rem 0.2rem (0, 0, 0, 0.9);
   }
 }

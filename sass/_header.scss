@@ -17,12 +17,12 @@
   z-index: 100;
 }
 
-.header_container .btn-logo a {
+.header_container .btn-logo .nav_link {
   display: inline-block;
   vertical-align: middle;
 }
 
-a {
+.nav_link {
   float: left;
   color: $-primary-color-1;
   text-align: center;
@@ -34,18 +34,13 @@ a {
   letter-spacing: 0.1rem;
 }
 
-a:hover {
+.nav_link:hover {
   background-color: $-primary-color-1;
   color: $-light-color-0;
   padding-bottom: 0;
   opacity: 0.8;
 
   transition: background 0.8s ease-in;
-}
-
-a:active {
-  background-color: $-primary-color-1;
-  color: $-light-color-0;
 }
 
 .btn-logo {
@@ -110,7 +105,7 @@ a:active {
     float: none;
     padding-left: 0;
 
-    a {
+    .nav_link {
       font-size: 1.1rem;
     }
   }

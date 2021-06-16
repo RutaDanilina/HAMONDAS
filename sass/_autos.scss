@@ -22,7 +22,8 @@
   flex: 1 0 25rem;
   margin: 2rem;
   padding: 1rem;
-  box-shadow: 0.01rem 0.01rem 0.8rem $-dark-color-2;
+  box-shadow: 0.01rem 0.01rem 0.8rem
+    $-dark-color-2;
   text-align: center;
   font-size: 1.3rem;
   color: $-dark-color-1;
@@ -34,9 +35,7 @@
   text-shadow: 0.1rem 0.1rem rgba(20, 91, 87, 1);
 }
 
-.cards button {
-  border: none;
-  outline: 0;
+.cards .open_modal {
   padding: 1.2rem;
   color: $-light-color-0;
   background-color: $-primary-color-2;
@@ -48,13 +47,16 @@
   font-weight: 600;
   opacity: 0.8;
   margin: auto;
+  text-shadow: 0.02rem 0.09rem 0.02rem
+    $-dark-color-1;
 }
 
-.cards button:hover {
+.cards .open_modal:hover {
   background-color: $-primary-color-1;
   color: $-light-color-0;
   transition: background 0.8s ease-in;
-  box-shadow: 0.1rem 0.2rem 0.6rem rgba(20, 91, 87, 1);
+  box-shadow: 0.1rem 0.2rem 0.6rem
+    rgba(20, 91, 87, 1);
 }
 
 ///////////////////////////////////////////
@@ -64,14 +66,14 @@
 }
 
 .modal {
-  // position: relative;
   position: fixed;
   top: 10vh;
+  bottom: 10vh;
   left: 10vw;
-  width: 80vw;
-  height: 80vh;
-  padding: 1rem;
-  text-align: center;
+  width: 80%;
+  height: auto;
+  max-height: 100%;
+  padding: 1rem 0.8rem 0 1rem;
   z-index: 20;
   background-color: $-light-color-0;
   color: $-dark-color-1;
@@ -79,27 +81,156 @@
 }
 
 .modal_content {
+  display: block;
+  overflow: auto;
   padding: 1rem;
-  width: 95%;
+  // width: 95%;
+  max-width: 100%;
+  max-height: 100%;
   text-align: center;
   margin: auto;
+}
 
-  img {
-    width: 20rem;
-    height: 20rem;
+::-webkit-scrollbar {
+  width: 0.5rem;
+  right: 0;
+  top: 10vh;
+}
+
+::-webkit-scrollbar-track {
+  background: $-light-color-0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem;
+
+  .gal_thumb {
+    all: initial;
+    float: center;
+    padding: 0.4rem;
+    margin: 0;
+
+    img {
+      height: 5rem;
+      width: auto;
+    }
+    img:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  .card_img {
+    padding: 0;
+    margin: auto;
+    height: 5rem;
+    cursor: pointer;
+  }
+
+  .big {
+    all: initial;
+    margin: 0.4rem;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.aprasymas_placiau {
+  height: auto;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 100%;
+}
+
+.iconeles {
+  width: 100%;
+  margin: auto;
+
+  .iconeles_blokas {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.8rem;
+
+    p {
+      width: 100%;
+      margin: auto;
+      text-shadow: 0.01rem 0.01rem 0.1rem
+        $-primary-color-1;
+    }
+  }
+}
+
+.apie_auto {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  justify-content: center;
+  margin-bottom: 4rem;
+
+  .material-icons {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    color: $-primary-color-2;
+  }
+
+  p {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    margin: 1.1rem;
+  }
+}
+
+.modal_footer {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: $-primary-color-2;
+}
+
+.modal_btn {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin: auto;
+  color: $-light-color-0;
+  background-color: $-primary-color-2;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $-primary-color-1;
+    transition: background 0.4s ease-in;
+    box-shadow: 0.1rem 0.2rem 0.6rem
+      rgba(20, 91, 87, 1);
   }
 }
 
 .close_modal {
   position: absolute;
   top: 0.1rem;
-  right: 0.8rem;
+  right: 2rem;
   font-size: 2.3rem;
   color: $-dark-color-1;
   cursor: pointer;
   border: none;
   background: none;
   z-index: 110;
+  padding: 0.7rem;
 }
 
 .overlay {
@@ -133,8 +264,8 @@
     font-size: 2rem;
   }
 
-  .cards button {
-    padding: 1rem;
+  .cards .open_modal {
+    padding: 0.8rem;
     width: 100%;
     font-size: 1.6rem;
     font-weight: 500;

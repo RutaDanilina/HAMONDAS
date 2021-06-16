@@ -1,137 +1,277 @@
-#section_contacts {
-  border-top: 0.1rem solid rgb(238, 176, 42);
+#section_cards {
   width: 100%;
-  padding-bottom: 5rem;
-  margin: auto;
-  background-image: linear-gradient(
-      320deg,
-      rgba(46, 45, 43, 1) 18%,
-      rgba(14, 85, 81, 0.4242424242424242) 51%,
-      rgba(2, 30, 32, 0) 72%
-    ),
-    url("../foto/form.jpeg");
-  opacity: 0.8;
-  background-size: cover;
-  background-position: center;
+  margin: -28rem 0 8rem 0;
 }
 
-.contacts_header {
-  text-shadow: 0.02rem 0.09rem 0.02rem $-primary-color-1;
-  font-weight: 700;
+.cards_header {
   margin: auto;
   width: 50%;
+  text-shadow: 0.02rem 0.02rem rgb(238, 176, 42);
+  color: $-primary-color-1;
   font-size: 2.25rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  margin-top: 2rem;
-  padding-top: 3rem;
-  color: $-light-color-0;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  margin-left: 20%;
-  border-radius: 0.5rem;
-  justify-content: center;
+.cards_grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-input[type="text"],
-select,
-textarea {
+.cards {
+  flex: 1 0 25rem;
+  margin: 2rem;
+  padding: 1rem;
+  box-shadow: 0.01rem 0.01rem 0.8rem
+    $-dark-color-2;
   text-align: center;
+  font-size: 1.3rem;
   color: $-dark-color-1;
-  width: 100%;
+}
+
+.price {
+  color: $-primary-color-3;
+  font-size: 2.2rem;
+  text-shadow: 0.1rem 0.1rem rgba(20, 91, 87, 1);
+}
+
+.cards .open_modal {
   padding: 1.2rem;
-  border: 0.02rem solid $-primary-color-1;
-  border-radius: 0.4rem;
-  resize: vertical;
-  background: rgba(255, 255, 255, 0.685);
-}
-
-input[type="text"]:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 0.6rem;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 0.6rem;
-}
-
-/* isvalyti floatsus po columnsu */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.contact_btn {
-  margin: 0.8rem 0 2rem 0;
-  padding: 1.5rem;
-  width: 75.44%;
-  background-color: $-primary-color-2;
   color: $-light-color-0;
+  background-color: $-primary-color-2;
+  border-radius: 0.5rem;
   text-align: center;
-  display: block;
   cursor: pointer;
-  border-radius: 0.7rem;
-  outline: none;
-  text-shadow: 0.02rem 0.09rem 0.02rem $-primary-color-1;
-  letter-spacing: 0.5rem;
-
-  &:hover {
-    background-color: $-primary-color-1;
-    color: $-light-color-0;
-    transition: background 0.8s ease-in;
-  }
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  opacity: 0.8;
+  margin: auto;
+  text-shadow: 0.02rem 0.09rem 0.02rem
+    $-dark-color-1;
 }
 
-textarea::placeholder {
-  text-transform: uppercase;
-  color: $-light-color-2;
-  font-size: 1.4rem;
-}
-input::placeholder {
-  text-transform: uppercase;
-  color: $-light-color-2;
-  font-size: 1.2rem;
+.cards .open_modal:hover {
+  background-color: $-primary-color-1;
+  color: $-light-color-0;
+  transition: background 0.8s ease-in;
+  box-shadow: 0.1rem 0.2rem 0.6rem
+    rgba(20, 91, 87, 1);
 }
 
 ///////////////////////////////////////////
-//media queriai
-@media screen and (max-width: 600px) {
-  #section_contacts {
-    width: 100%;
-    padding-bottom: 5rem;
+//modalas
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 10vh;
+  bottom: 10vh;
+  left: 10vw;
+  width: 80%;
+  height: auto;
+  max-height: 100%;
+  padding: 1rem 0.8rem 0 1rem;
+  z-index: 20;
+  background-color: $-light-color-0;
+  color: $-dark-color-1;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+.modal_content {
+  display: block;
+  overflow: auto;
+  padding: 1rem;
+  // width: 95%;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  right: 0;
+  top: 10vh;
+}
+
+::-webkit-scrollbar-track {
+  background: $-light-color-0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem;
+
+  .gal_thumb {
+    all: initial;
+    float: center;
+    padding: 0.4rem;
+    margin: 0;
+
+    img {
+      height: 5rem;
+      width: auto;
+    }
+    img:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
   }
 
-  .contacts_header {
-    font-weight: 500;
+  .card_img {
+    padding: 0;
+    margin: auto;
+    height: 5rem;
+    cursor: pointer;
+  }
+
+  .big {
+    all: initial;
+    margin: 0.4rem;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.aprasymas_placiau {
+  height: auto;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 100%;
+}
+
+.iconeles {
+  width: 100%;
+  margin: auto;
+
+  .iconeles_blokas {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.8rem;
+
+    p {
+      width: 100%;
+      margin: auto;
+      text-shadow: 0.01rem 0.01rem 0.1rem
+        $-primary-color-1;
+    }
+  }
+}
+
+.apie_auto {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  justify-content: center;
+  margin-bottom: 4rem;
+
+  .material-icons {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    color: $-primary-color-2;
+  }
+
+  p {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    margin: 1.1rem;
+  }
+}
+
+.modal_footer {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: $-primary-color-2;
+}
+
+.modal_btn {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin: auto;
+  color: $-light-color-0;
+  background-color: $-primary-color-2;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $-primary-color-1;
+    transition: background 0.4s ease-in;
+    box-shadow: 0.1rem 0.2rem 0.6rem
+      rgba(20, 91, 87, 1);
+  }
+}
+
+.close_modal {
+  position: absolute;
+  top: 0.1rem;
+  right: 2rem;
+  font-size: 2.3rem;
+  color: $-dark-color-1;
+  cursor: pointer;
+  border: none;
+  background: none;
+  z-index: 110;
+  padding: 0.7rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(0.5rem);
+  z-index: 15;
+}
+
+@media screen and (max-width: 50rem) {
+  #section_cards {
+    width: 100%;
+    padding-top: 3rem;
+  }
+
+  .cards_header {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .cards {
+    margin: 1.8rem;
+    padding: 0.8rem;
+  }
+
+  .price {
     font-size: 2rem;
   }
 
-  input[type="text"],
-  select,
-  textarea {
-    padding: 1rem;
+  .cards .open_modal {
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
   }
 
-  .col-25 .col-75 {
-    margin-top: 0.4rem;
-  }
-
-  .contact_btn {
-    padding: 1.2rem;
-    letter-spacing: 0.3rem;
+  .close_modal {
+    font-size: 2rem;
   }
 }
